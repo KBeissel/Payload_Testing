@@ -4,7 +4,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <fntl.h>
+#include <fcntl.h>
 
 int main() {
 	system("echo 49 > /sys/class/gpio/export");
