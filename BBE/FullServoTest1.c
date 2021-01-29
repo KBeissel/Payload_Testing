@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <stdio.h>
 
 int print_menu() {
 	
@@ -26,11 +27,11 @@ int main() {
 	printf("e - Exit\n");
 	printf("Enter Choice:");
 	scanf("%c", &choice);
-
+	int i = 0;
 	switch (choice) {
 	case 'f':
 		//drive 4 fully;
-		int i = 0;
+		
 		while (i < 50) {
 			write(LA1, "1", 1);
 			write(LA3, "1", 1);
@@ -46,7 +47,7 @@ int main() {
 		}
 	case 'h':
 		//drive 4 half
-		int i = 0;
+		
 		while (i < 50) {
 			write(LA1, "1", 1);
 			write(LA3, "1", 1);
@@ -62,7 +63,7 @@ int main() {
 		}
 	case 'r':
 		//retract all 4
-		int i = 0;
+		
 		while (i < 50) {
 			write(LA1, "1", 1);
 			write(LA3, "1", 1);
